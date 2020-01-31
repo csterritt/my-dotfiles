@@ -39,7 +39,7 @@ ZSH_THEME="frisk"
 DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -71,7 +71,7 @@ DISABLE_LS_COLORS="true"
 plugins=(git gem bundler cargo golang npm npx nvm rbenv ripgrep ruby vi-mode yarn)
 
 source $ZSH/oh-my-zsh.sh
-source .bash_aliases
+source ${HOME}/.bash_aliases
 
 # User configuration
 export EDITOR=/usr/bin/vi
