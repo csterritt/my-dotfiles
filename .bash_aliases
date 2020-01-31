@@ -12,8 +12,6 @@ alias gsa='git status'
 alias gs='git status -sb'
 alias gdb='git diff -b'
 alias gl='git l'
-# alias cfp='cucumber --format progress'
-# alias sc='/usr/bin/screen -e^_-'
 alias hn='/bin/hostname'
 alias top10='/usr/bin/top -s 10 -o cpu'
 alias sd='search .'
@@ -25,22 +23,12 @@ alias t1='tail -10'
 alias t2='tail -20'
 alias t3='tail -30'
 alias t4='tail -40'
-#alias pyserve='python -m SimpleHTTPServer 3000'
 alias ruserve='ruby -run -e httpd . -p 3000'
-#alias v=/usr/local/bin/vagrant
-#alias ijulia='ipython notebook --profile julia'
-#alias jl=julia
 alias rss='rspec spec'
-#alias z='zeus'
-#alias im='iex -S mix'
-#alias myredis='/usr/local/bin/redis-server /usr/local/etc/redis.conf'
-#alias rag='ag --ruby'
 alias durn='du -k | sort -rn'
-#alias hp='$(history | cut -c8- | sort -u | pick)'
 alias jpp='python -m json.tool'
 alias j=jump
 alias dk=docker
-#alias weatherck='curl http://192.168.88.237:4000/api/time_and_weather?format=json ; echo'
 alias cbr='cargo build --release'
 alias upup='brew update && brew upgrade'
 alias si='./single_test_run'
@@ -67,26 +55,4 @@ function unmark {
 }
 function marks {
     \ls -l "$MARKPATH" | tail -n +2 | sed 's/  / /g' | cut -d' ' -f9- | awk -F ' -> ' '{printf "%-10s -> %s\n", $1, $2}'
-}
-
-qq() {
-    clear
-
-    logpath="$TMPDIR/q"
-    if [[ -z "$TMPDIR" ]]; then
-        logpath="/tmp/q"
-    fi
-
-    if [[ ! -f "$logpath" ]]; then
-        echo 'Q LOG' > "$logpath"
-    fi
-
-    tail -100f -- "$logpath"
-}
-
-rmqq() {
-    if [[ -f "$TMPDIR/q" ]]; then
-        rm "$TMPDIR/q"
-    fi
-    qq
 }
