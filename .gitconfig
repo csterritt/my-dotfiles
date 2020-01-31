@@ -1,0 +1,16 @@
+[alias]
+	l = log --pretty=oneline --abbrev-commit --graph --decorate --all --color
+	ls = log --pretty=oneline --abbrev-commit --graph --decorate --color
+[color]
+	ui = true
+[color "decorate"]
+	tag = magenta
+[core]
+	trustctime = false
+[diff]
+	compactionHeuristic = true
+[push]
+	default = simple
+[user]
+	name = Chris Sterritt
+	email = csterritt@gmail.com
