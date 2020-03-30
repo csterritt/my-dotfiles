@@ -8,7 +8,7 @@ export ZSH="/Users/chris/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="frisk"
+ZSH_THEME="friskier"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -72,6 +72,8 @@ plugins=(git gem bundler cargo golang npm npx nvm rbenv ripgrep ruby vi-mode yar
 
 source $ZSH/oh-my-zsh.sh
 source ${HOME}/.bash_aliases
+
+unsetopt autopushd
 
 # User configuration
 export EDITOR=/usr/bin/vi
