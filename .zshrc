@@ -68,16 +68,21 @@ DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git gem bundler cargo golang npm npx nvm rbenv ripgrep ruby vi-mode yarn)
+plugins=(git zsh-nvm gem bundler cargo golang npm npx rbenv ripgrep ruby vi-mode yarn nvm)
 
 source $ZSH/oh-my-zsh.sh
 source ${HOME}/.bash_aliases
+
+# Set up so that 'shift-tab' does file completion, ignoring current context.
+zle -C complete complete-word complete-files
+bindkey '^[[Z' complete
+complete-files () { compadd - $PREFIX* }
 
 unsetopt autopushd
 
 # User configuration
 export EDITOR=/usr/bin/vi
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH:${HOME}/bin
 
 # Set up for ripgrep config
 export RIPGREP_CONFIG_PATH=/Users/chris/.config/ripgrep/config.rc
@@ -88,6 +93,5 @@ export RUST_SRC_PATH=/Volumes/Second/Chris/hacks/rust/rust/src
 export CARGO_HOME=/Users/chris/.cargo
 
 # Add go
-# export GOPATH=/Users/chris/hacks/gofigure
 export GOPATH=/Volumes/Second/Chris/hacks/gofigure
 export PATH=${PATH}:${GOPATH}/bin
