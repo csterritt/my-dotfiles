@@ -1,8 +1,8 @@
 {
   "useTaobaoRegistry": false,
   "packageManager": "yarn",
-  "latestVersion": "4.2.3",
-  "lastChecked": 1583247923697,
+  "latestVersion": "4.4.5",
+  "lastChecked": 1592863044814,
   "presets": {
     "bol-example-ts-class-prettier-jest": {
       "useConfigFiles": true,

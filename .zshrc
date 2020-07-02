@@ -78,6 +78,9 @@ zle -C complete complete-word complete-files
 bindkey '^[[Z' complete
 complete-files () { compadd - $PREFIX* }
 
+# Set up zmv
+autoload -U zmv
+
 unsetopt autopushd
 
 # User configuration

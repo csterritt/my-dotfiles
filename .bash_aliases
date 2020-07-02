@@ -40,6 +40,7 @@ alias rsu='tmux send-keys -t {up-of} C-c Up C-m'
 alias serveo='ssh -R 80:localhost:3000 serveo.net'
 alias trc="tr : '\012'"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias denode='brew uninstall --ignore-dependencies node'
 
 export LESS='-RMIX'
 
