@@ -31,6 +31,8 @@ alias j=jump
 alias dk=docker
 alias cbr='cargo build --release'
 alias upup='brew update && brew upgrade'
+alias burd='brew upgrade --dry-run'
+alias denode='brew uninstall --ignore-dependencies node'
 alias si='./single_test_run'
 alias gohere='export GOPATH=`pwd` ; export PATH=${PATH}:${GOPATH}/bin'
 alias goi='go install'
@@ -40,7 +42,6 @@ alias rsu='tmux send-keys -t {up-of} C-c Up C-m'
 alias serveo='ssh -R 80:localhost:3000 serveo.net'
 alias trc="tr : '\012'"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias denode='brew uninstall --ignore-dependencies node'
 
 export LESS='-RMIX'
 
