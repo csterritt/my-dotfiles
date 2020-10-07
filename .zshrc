@@ -68,7 +68,7 @@ DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-nvm gem bundler cargo golang npm npx rbenv ripgrep ruby vi-mode yarn nvm)
+plugins=(git zsh-nvm gem bundler cargo golang npm rbenv ripgrep ruby vi-mode yarn nvm)
 
 source $ZSH/oh-my-zsh.sh
 source ${HOME}/.bash_aliases
