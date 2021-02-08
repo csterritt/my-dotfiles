@@ -1,4 +1,4 @@
-alias t=/usr/bin/less
+# alias t=/usr/bin/less
 alias ls='/bin/ls -F'
 alias la='/bin/ls -asF'
 alias ll='/bin/ls -lasF'
@@ -30,7 +30,7 @@ alias jpp='python -m json.tool'
 alias j=jump
 alias dk=docker
 alias cbr='cargo build --release'
-alias upup='brew update && brew upgrade'
+alias upup='brew update && brew upgrade && if [ -e /usr/local/bin/node  ] ; then denode ; fi'
 alias burd='brew upgrade --dry-run'
 alias denode='brew uninstall --ignore-dependencies node'
 alias si='./single_test_run'
@@ -42,6 +42,10 @@ alias rsu='tmux send-keys -t {up-of} C-c Up C-m'
 alias serveo='ssh -R 80:localhost:3000 serveo.net'
 alias trc="tr : '\012'"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias ccat=/bin/cat
+alias cat='/usr/local/bin/bat --theme "Solarized (light)"'
+alias t='/usr/local/bin/bat --theme "Solarized (light)"'
+alias nr="nim c -r '--hint[SuccessX]:off' '--hint[Conf]:off' '--hint[Link]:off' '--hint[Exec]:off'"
 
 export LESS='-RMIX'
 
