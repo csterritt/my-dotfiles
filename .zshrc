@@ -68,7 +68,7 @@ DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-nvm gem bundler cargo golang npm rbenv ripgrep ruby vi-mode yarn nvm)
+plugins=(git zsh-nvm gem bundler cargo golang npm rbenv ripgrep ruby vi-mode yarn nvm zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 source ${HOME}/.bash_aliases
@@ -77,6 +77,12 @@ source ${HOME}/.bash_aliases
 zle -C complete complete-word complete-files
 bindkey '^[[Z' complete
 complete-files () { compadd - $PREFIX* }
+
+# push-line binding
+bindkey '^u' push-line
+
+# Set up for autosuggest-execute
+bindkey '^o' autosuggest-execute
 
 # Set up zmv
 autoload -U zmv
@@ -98,3 +104,12 @@ export CARGO_HOME=/Users/chris/.cargo
 # Add go
 export GOPATH=/Volumes/Second/Chris/hacks/gofigure
 export PATH=${PATH}:${GOPATH}/bin
+
+# HSTR configuration - add this to ~/.zshrc
+alias hh=hstr                    # hh to be alias for hstr
+setopt histignorespace           # skip cmds w/ leading space from history
+export HSTR_CONFIG=hicolor       # get more colors
+bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode check doc)
+
+# Set up zoxide
+eval "$(zoxide init zsh)"
