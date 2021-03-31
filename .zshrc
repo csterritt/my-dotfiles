@@ -81,6 +81,9 @@ complete-files () { compadd - $PREFIX* }
 # push-line binding
 bindkey '^u' push-line
 
+# set up forward-word
+bindkey '^g' forward-word
+
 # Set up for autosuggest-execute
 bindkey '^o' autosuggest-execute
 
