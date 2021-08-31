@@ -50,3 +50,6 @@ nvm_pth=$(brew --prefix nvm)/nvm.sh
 # Flutter
 export JAVA_HOME=/Users/chris/hacks/flutter/jdk-10.0.1.jdk/Contents/Home
 export PATH=/Users/chris/hacks/flutter/flutter/bin:${JAVA_HOME}/bin:${PATH}
+
+# broot
+source /Users/chris/.config/broot/launcher/bash/br

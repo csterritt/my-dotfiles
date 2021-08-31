@@ -116,3 +116,6 @@ bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode che
 
 # Set up zoxide
 eval "$(zoxide init zsh)"
+
+# broot
+source /Users/chris/.config/broot/launcher/bash/br
