@@ -40,6 +40,7 @@ alias goi='go install'
 alias gr='go run main.go'
 alias rsd='tmux send-keys -t {down-of} C-c Up C-m'
 alias rsu='tmux send-keys -t {up-of} C-c Up C-m'
+alias renumber='tmux move-window -r'
 alias serveo='ssh -R 80:localhost:3000 serveo.net'
 alias trc="tr : '\012'"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
