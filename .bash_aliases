@@ -47,7 +47,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias ccat=/bin/cat
 alias cat='/usr/local/bin/bat --theme "Solarized (light)"'
 alias t='/usr/local/bin/bat --theme "Solarized (light)"'
-alias nr="nim c -r '--hint[SuccessX]:off' '--hint[Conf]:off' '--hint[Link]:off' '--hint[Exec]:off'"
+alias nr="nim r '--hint[SuccessX]:off' '--hint[Conf]:off' '--hint[Link]:off' '--hint[Exec]:off'"
 
 export LESS='-RMIX'
 
