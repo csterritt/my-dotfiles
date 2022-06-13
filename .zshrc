@@ -116,3 +116,6 @@ eval "$(zoxide init zsh)"
 
 # broot
 source /Users/chris/.config/broot/launcher/bash/br
+
+# Fix for terminal double-characters in tmux
+export TERM=xterm-256color
