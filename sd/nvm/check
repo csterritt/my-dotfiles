@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source /Users/chris/.nvm/nvm.sh
+
+nvm ls-remote | egrep v16 | tail -10
