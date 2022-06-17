@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Standard git 'diff' command.
+# Standard git 'add' command.
 
 set -euo pipefail
 

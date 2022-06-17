@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# Check to see if there is a newer version of node 16.
+
 set -euo pipefail
 
 source /Users/chris/.nvm/nvm.sh
