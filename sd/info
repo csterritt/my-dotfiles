@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+echo See https://github.com/ianthehenry/sd for usage, etc.

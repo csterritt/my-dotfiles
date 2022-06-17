@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# My git 'gl' command, which shows the git history.
+
+set -euo pipefail
+
+/usr/local/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME l

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Standard git 'diff' command.
+
+set -euo pipefail
+
+/usr/local/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME diff
