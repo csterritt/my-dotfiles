@@ -4,7 +4,7 @@ alias la='/bin/ls -asF'
 alias ll='/bin/ls -lasF'
 alias yah='ping www.yahoo.com'
 alias top='/usr/bin/top -s 4 -o cpu'
-alias gtop='/usr/local/bin/glances --theme-white'
+alias gtop='/opt/homebrew/bin/glances --theme-white'
 alias purge='rm -f *~'
 alias h='history | tail -30'
 alias lowpri='/usr/bin/renice +20'
@@ -31,7 +31,7 @@ alias jpp='python -m json.tool'
 alias j=jump
 alias dk=docker
 alias cbr='cargo build --release'
-alias upup='brew update && brew upgrade && if [ -e /usr/local/bin/node  ] ; then denode ; fi'
+alias upup='brew update && brew upgrade && if [ -e /opt/homebrew/bin/node  ] ; then denode ; fi'
 alias burd='brew upgrade --dry-run'
 alias denode='brew uninstall --ignore-dependencies node'
 alias si='./single_test_run'
@@ -43,10 +43,10 @@ alias rsu='tmux send-keys -t {up-of} C-c Up C-m'
 alias renumber='tmux move-window -r'
 alias serveo='ssh -R 80:localhost:3000 serveo.net'
 alias trc="tr : '\012'"
-# alias config='/usr/local/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+# alias config='/opt/homebrew/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias ccat=/bin/cat
-alias cat='/usr/local/bin/bat --theme "Solarized (light)"'
-alias t='/usr/local/bin/bat --theme "Solarized (light)"'
+alias cat='/opt/homebrew/bin/bat --theme "Solarized (light)"'
+alias t='/opt/homebrew/bin/bat --theme "Solarized (light)"'
 alias nr="nim r '--hint[SuccessX]:off' '--hint[Conf]:off' '--hint[Link]:off' '--hint[Exec]:off'"
 
 export LESS='-RMIX'

@@ -68,7 +68,7 @@ DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-nvm gem bundler golang npm rbenv ripgrep ruby vi-mode yarn nvm zsh-autosuggestions zsh-syntax-highlighting zsh-fzy sd)
+plugins=(git zsh-nvm gem bundler golang npm rbenv ripgrep ruby vi-mode yarn nvm zsh-autosuggestions zsh-syntax-highlighting sd)
 
 source $ZSH/oh-my-zsh.sh
 source ${HOME}/.bash_aliases
@@ -109,13 +109,17 @@ export GOPATH=/Volumes/Second/Chris/hacks/gofigure
 export PATH=${PATH}:${GOPATH}/bin
 
 # fuzzy history search
-bindkey '^R'  fzy-history-widget
+# bindkey '^R'  fzy-history-widget
 
 # Set up zoxide
 eval "$(zoxide init zsh)"
 
 # broot
-source /Users/chris/.config/broot/launcher/bash/br
+# source /Users/chris/.config/broot/launcher/bash/br
 
 # Fix for terminal double-characters in tmux
 export TERM=xterm-256color
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

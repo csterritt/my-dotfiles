@@ -4,4 +4,4 @@
 
 set -euo pipefail
 
-/usr/local/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME diff
+/opt/homebrew/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME diff
