@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Clean up the prayer list to the format I like.
+
+echo Cleaning...
+pbpaste | prayer-list > /tmp/clean.txt
+pbcopy < /tmp/clean.txt
+rm -f /tmp/clean.txt
