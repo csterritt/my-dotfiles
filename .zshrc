@@ -105,7 +105,7 @@ export RUST_SRC_PATH=/Volumes/Second/Chris/hacks/rust/rust/src
 export CARGO_HOME=/Users/chris/.cargo
 
 # Add go
-export GOPATH=/Volumes/Second/Chris/hacks/gofigure
+export GOPATH=/Users/chris/go
 export PATH=${PATH}:${GOPATH}/bin
 
 # fuzzy history search

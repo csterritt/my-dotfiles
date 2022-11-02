@@ -20,7 +20,7 @@ export CARGO_HOME=/Users/chris/.cargo
 
 # Add go
 # export GOPATH=/Users/chris/hacks/gofigure
-export GOPATH=/Volumes/Second/Chris/hacks/gofigure
+export GOPATH=/Users/chris/go
 export PATH=${PATH}:${GOPATH}/bin
 
 # rbenv
