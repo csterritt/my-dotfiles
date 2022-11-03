@@ -14,3 +14,5 @@
 [user]
 	name = Chris Sterritt
 	email = csterritt@gmail.com
+[init]
+	defaultBranch = main
