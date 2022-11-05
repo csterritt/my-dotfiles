@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Check homebrew for updates
+
+brew update
+if [ `brew outdated | wc -l` = 0 ] ; then
+  echo "Nothing new"
+  exit 0
+fi
+
+if [ `brew outdated | egrep -i tmux | wc -l` != 0 ] ; then
+  echo "tmux has changed, bailing."
+  exit 1
+fi
+
+brew upgrade
+
+if [ -e /opt/homebrew/bin/node  ] ; then
+  brew uninstall --ignore-dependencies node
+fi
