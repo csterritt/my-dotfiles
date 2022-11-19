@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-# Check to see if there is a newer version of node 16.
+# Check to see if there is a newer version of node 18.
 
 set -euo pipefail
 
 source /Users/chris/.nvm/nvm.sh
 
-nvm ls-remote | egrep v16 | tail -10
+nvm ls-remote | egrep v18 | tail -10

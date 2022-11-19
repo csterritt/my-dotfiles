@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Search in files by filename below the current directory.
+
+rg -g $1 $2
