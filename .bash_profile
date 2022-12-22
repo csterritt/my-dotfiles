@@ -53,3 +53,5 @@ export PATH=/Users/chris/hacks/flutter/flutter/bin:${JAVA_HOME}/bin:${PATH}
 
 # broot
 source /Users/chris/.config/broot/launcher/bash/br
+
+source /Users/chris/.docker/init-bash.sh || true # Added by Docker Desktop

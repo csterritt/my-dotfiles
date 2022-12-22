@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Download the video given as the first argument from YT to a local file.
+if (( $# != 1 )); then
+  >&2 echo "Usage: sd yt-dl url-to-video"
+  exit 1
+fi
+
+docker run \
+  --rm -i \
+  -e PGID=$(id -g) \
+  -e PUID=$(id -u) \
+  -v "$(pwd)":/workdir:rw \
+  ghcr.io/mikenye/docker-youtube-dl:latest $1
