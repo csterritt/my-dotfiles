@@ -25,5 +25,10 @@ brew_update () {
 
 brew_update
 
+echo 'Node:'
+source /Users/chris/.nvm/nvm.sh
+nvm ls-remote | egrep v18 | tail -3
+
+echo
 echo 'Obsidian:'
 curl -s https://obsidian.md/ | pup .hero-button-container a button .u-muted text{}
