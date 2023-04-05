@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Install an app into my directory, instead of the main one (which requires admin)
+if [ "x${1-}" = "x" ] ; then
+  echo "Usage: sd brew appinstall app-to-install"
+  exit 1
+fi
+
+brew install --appdir /Users/chris/Applications $1
