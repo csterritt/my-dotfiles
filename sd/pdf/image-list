@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# List images in a given PDF
+
+if [ "x${1-}" = "x" -o "x${2-}" != "x" ] ; then
+  echo "Usage: sd pdf image-list input_file.pdf"
+  exit 1
+fi
+
+docker run -v $PWD:/pdf gkmr/pdf-tools pdfimages -list /pdf/$1

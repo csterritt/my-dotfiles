@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Pull specific pages out of a PDF
+
+if [ "x${3-}" = "x" ] ; then
+  echo "Usage: sd pdf get-pages input_file.pdf output_file.pdf page-num [...page-num]"
+  exit 1
+fi
+
+inp=$1
+shift
+outp=$1
+shift
+docker run -v $PWD:/pdf gkmr/pdf-tools pdftk /pdf/${inp} cat $@ output /pdf/${outp}

@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Extract images from a given PDF to a given directory
+
+if [ "x${2-}" = "x" -o "x${3-}" != "x" ] ; then
+  echo "Usage: sd pdf image-extract input_file.pdf output_prefix"
+  exit 1
+fi
+
+docker run -v $PWD:/pdf gkmr/pdf-tools pdfimages -all /pdf/$1 /pdf/$2
