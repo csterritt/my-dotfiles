@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Remove all newlines from the clipboard text
+
+echo Cleaning...
+pbpaste | tr -s '\r\n' ' ' > /tmp/clean.txt
+pbcopy < /tmp/clean.txt
+rm -f /tmp/clean.txt

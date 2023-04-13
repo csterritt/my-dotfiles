@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Describe the fonts used in a given PDF
+
+if [ "x${1-}" = "x" -o "x${2-}" != "x" ] ; then
+  echo "Usage: sd pdf fonts input_file.pdf"
+  exit 1
+fi
+
+docker run -v $PWD:/pdf gkmr/pdf-tools pdffonts /pdf/$1
