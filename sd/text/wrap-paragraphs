@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Split lines greater than 80 characters on blanks
+
+echo Cleaning...
+pbpaste | perl -ne 'while(<>) { chomp; if (length($_) > 79) { @f = split; $line = ""; @g = (); while ($word = shift(@f)) { if (length($line) >= 60) { print $line, "\n"; $line = ""; } $line = $line . $word . " "; } if (length($line) > 0) { print $line, "\n"; $line = ""; } } else { print $_, "\n"; } }' > /tmp/clean.txt
+pbcopy < /tmp/clean.txt
+rm -f /tmp/clean.txt
