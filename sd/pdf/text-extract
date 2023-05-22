@@ -9,4 +9,4 @@ if [ "x${2-}" = "x" -o "x${3-}" != "x" ] ; then
   exit 1
 fi
 
-docker run --rm -v $PWD:/pdf gkmr/pdf-tools pdftotext /pdf/$1 /pdf/$2
+docker run --rm -v "$PWD:/pdf" gkmr/pdf-tools pdftotext /pdf/$1 /pdf/$2

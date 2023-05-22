@@ -9,4 +9,4 @@ if [ "x${1-}" = "x" -o "x${2-}" != "x" ] ; then
   exit 1
 fi
 
-docker run --rm -v $PWD:/pdf gkmr/pdf-tools pdffonts /pdf/$1
+docker run --rm -v "$PWD:/pdf" gkmr/pdf-tools pdffonts /pdf/$1
