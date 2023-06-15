@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Back up my list of web links.
+js=`curl https://blockolinks.cls.cloud/chris | pup script attr{'src'} | egrep chris`
+if [ -e /Users/chris/Documents/Backups/Links/previous-links-2.js ] ; then
+  mv -f /Users/chris/Documents/Backups/Links/previous-links-2.js /Users/chris/Documents/Backups/Links/previous-links-3.js
+fi
+if [ -e /Users/chris/Documents/Backups/Links/previous-links-1.js ] ; then
+  mv -f /Users/chris/Documents/Backups/Links/previous-links-1.js /Users/chris/Documents/Backups/Links/previous-links-2.js
+fi
+if [ -e /Users/chris/Documents/Backups/Links/previous-links.js ] ; then
+  mv -f /Users/chris/Documents/Backups/Links/previous-links.js /Users/chris/Documents/Backups/Links/previous-links-1.js
+fi
+if [ -e /Users/chris/Documents/Backups/Links/latest-links.js ] ; then
+  mv -f /Users/chris/Documents/Backups/Links/latest-links.js /Users/chris/Documents/Backups/Links/previous-links.js
+fi
+curl -s "https://blockolinks.cls.cloud${js}" > /Users/chris/Documents/Backups/Links/latest-links.js
+echo Done

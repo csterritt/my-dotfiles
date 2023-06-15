@@ -2,6 +2,10 @@
 
 set -euo pipefail
 
-# Search in files by filename below the current directory.
+# Search in files by filename below the current directory. Two args gives a file glob and pattern, one just does a pattern.
 
-rg -g $1 $2
+if [ "x${2-}" = "x" ] ; then
+  rg $1
+else
+  rg -g $1 $2
+fi
