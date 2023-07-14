@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Show info about the 'up' program.
+open https://github.com/akavel/up
