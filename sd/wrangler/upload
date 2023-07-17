@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Upload to the given bucket (arg 1) the given file (arg 2)
+if (( $# != 2 )); then
+  >&2 echo "Usage: sd wrangler upload bucket-name file-to-upload"
+  exit 1
+fi
+
+echo wrangler r2 object put $1/$2 -f $2
