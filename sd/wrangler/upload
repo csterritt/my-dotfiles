@@ -8,4 +8,16 @@ if (( $# != 2 )); then
   exit 1
 fi
 
-echo wrangler r2 object put $1/$2 -f $2
+if [ ! -e "$2" ] ; then
+  >&2 echo "Usage: sd wrangler upload bucket-name file-to-upload"
+  >&2 echo "File named does not exist?"
+  exit 1
+fi
+
+if [ -e "$1" ] ; then
+  >&2 echo "Usage: sd wrangler upload bucket-name file-to-upload"
+  >&2 echo "bucket-name is also a file?"
+  exit 1
+fi
+
+wrangler r2 object put $1/$2 -f $2

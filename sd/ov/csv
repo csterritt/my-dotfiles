@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Show a file with ov's csv mode (see ~/.config/ov/config.yaml for modes)
+if (( $# != 1 )); then
+  >&2 echo "Usage: sd ov csv csv-file-to-show"
+  exit 1
+fi
+
+ov --view-mode csv $1
