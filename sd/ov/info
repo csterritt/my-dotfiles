@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Show the webpage which explains the 'ov' command
+open https://github.com/noborus/ov
