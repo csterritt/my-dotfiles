@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Start up the ollama server to run and handle requests from the command line client.
+/opt/homebrew/opt/ollama/bin/ollama serve

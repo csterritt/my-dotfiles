@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Process tab with lines that are too long to ones that should fit in my two-column output
+
+echo Adjusting...
+cd /Users/chris/hacks/music/tab-lines-fix
+pbpaste | node process-tab-lines.js > /tmp/wrapped.txt
+pbcopy < /tmp/wrapped.txt
+rm -f /tmp/wrapped.txt
