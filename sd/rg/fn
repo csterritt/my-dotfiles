@@ -3,5 +3,9 @@
 set -euo pipefail
 
 # Find files by filename below the current directory.
+if [ "x${1-}" = "x" ] ; then
+  echo "Usage: sd rg fn file-glob-pattern"
+  exit 1
+fi
 
 rg -g $1 --files

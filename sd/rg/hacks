@@ -2,12 +2,13 @@
 
 set -euo pipefail
 
-# Search in files by filename below the current directory. Two args gives a file glob and pattern, one just does a pattern.
+# Find files by filename below the ~/hacks directory. Two args gives a file glob and pattern, one just does a pattern.
 if [ "x${1-}" = "x" ] ; then
   echo "Usage: sd rg hacks [file-glob] pattern"
   exit 1
 fi
 
+cd ~/hacks
 if [ "x${2-}" = "x" ] ; then
   rg $1
 else

@@ -1,7 +1,7 @@
 # alias t=/usr/bin/less
-alias ls='/bin/ls -F'
-alias la='/bin/ls -asF'
-alias ll='/bin/ls -lasF'
+alias ls='/opt/homebrew/bin/eza -F'
+alias la='/opt/homebrew/bin/eza -aF'
+alias ll='/opt/homebrew/bin/eza -laF'
 alias yah='ping www.yahoo.com'
 alias top='/usr/bin/top -s 4 -o cpu'
 alias gtop='/opt/homebrew/bin/glances --theme-white'
