@@ -3,4 +3,5 @@
 set -euo pipefail
 
 # Show info about the 'up' program.
+echo "Loading info in the browser..."
 open https://github.com/akavel/up

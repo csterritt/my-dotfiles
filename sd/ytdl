@@ -13,4 +13,4 @@ docker run \
   -e PGID=$(id -g) \
   -e PUID=$(id -u) \
   -v "$(pwd)":/workdir:rw \
-  ghcr.io/mikenye/docker-youtube-dl:latest $1
+  tnk4on/yt-dlp:latest $1

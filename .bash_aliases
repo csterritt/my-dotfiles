@@ -2,6 +2,8 @@
 alias ls='/opt/homebrew/bin/eza -F'
 alias la='/opt/homebrew/bin/eza -aF'
 alias ll='/opt/homebrew/bin/eza -laF'
+alias lt='/opt/homebrew/bin/eza -laF -sold'
+alias dust='/opt/homebrew/bin/dust -c'
 alias yah='ping www.yahoo.com'
 alias top='/usr/bin/top -s 4 -o cpu'
 alias gtop='/opt/homebrew/bin/glances --theme-white'

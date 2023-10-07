@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Open the website with information on these PDF tools
+
+open 'https://hub.docker.com/r/gkmr/pdf-tools'
+echo 'Info opened in browser.'

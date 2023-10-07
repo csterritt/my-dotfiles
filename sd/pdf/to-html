@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Convert a PDF file to HTML
+
+if [ "x${2-}" = "x" ] ; then
+  echo "Usage: sd pdf to-html input_file.pdf output_prefix"
+  exit 1
+fi
+
+inp=$1
+shift
+outp=$1
+shift
+docker run --rm -v "$PWD:/pdf" gkmr/pdf-tools pdftohtml "/pdf/${inp}" "/pdf/${outp}"
