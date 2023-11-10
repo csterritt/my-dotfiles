@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Convert one audio file to another using ffmpeg
+
+if [ "x${2-}" = "x" -o "x${3-}" != "x" ] ; then
+  echo "Usage: sd ffmpeg convert input_file output_file"
+  exit 1
+fi
+
+docker run --rm -v "$PWD:/config" linuxserver/ffmpeg -i "/config/${1-}" "/config/${2-}"
