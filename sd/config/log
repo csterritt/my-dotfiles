@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Standard git log command
+
+set -euo pipefail
+
+/opt/homebrew/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME l
