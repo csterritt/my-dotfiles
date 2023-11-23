@@ -20,6 +20,7 @@ brew_update () {
   
   if [ -e /opt/homebrew/bin/node  ] ; then
     brew uninstall --ignore-dependencies node
+    perl -i -ne 'if (/^\#\!/) { print "#!/usr/bin/env node\n"; } else { print }' $(readlink -f /opt/homebrew/bin/wrangler)
   fi
 }
 
