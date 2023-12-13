@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Generate a standard bash script with the given name
+if (( $# != 1 )); then
+  >&2 echo "Usage: sd bash-script script-name"
+  exit 1
+fi
+
+echo "#!/bin/bash" > "$1"
+echo "set -euo pipefail" >> "$1"
+chmod 755 "$1"
