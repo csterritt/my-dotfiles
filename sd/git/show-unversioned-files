@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Show all the files that have been added to this directory but not to git
+
+if [[ "x${1-}" != "x" ]] ; then
+  echo "Usage: sd git show-unversioned-files"
+  exit 1
+fi
+
+git status -sb | egrep '\?\?' | choose 1

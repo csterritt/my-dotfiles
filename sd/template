@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Describe the new command in this comment
+
+if [ "x${1-}" = "x" -o "x${2-}" != "x" ] ; then
+  echo "Usage: sd newcommandname arg1"
+  exit 1
+fi
+
+# Actual command goes here
