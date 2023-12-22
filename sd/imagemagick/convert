@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Convert an image file from one type to another
+
+if [ "x${1-}" = "x" -o "x${2-}" = "x" -o "x${3-}" != "x" ] ; then
+  echo "Usage: sd imagemagick convert file1 file2"
+  exit 1
+fi
+
+# Actual command goes here
+docker run --rm -v "$PWD:/imgs" --entrypoint=convert dpokidov/imagemagick "/imgs/${1-}" "/imgs/${2-}"
