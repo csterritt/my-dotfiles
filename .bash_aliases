@@ -1,6 +1,6 @@
 # alias t=/usr/bin/less
 alias ls='/opt/homebrew/bin/eza -F'
-alias la='/opt/homebrew/bin/eza -aF'
+alias la='/opt/homebrew/bin/eza --all -F'
 alias ll='/opt/homebrew/bin/eza -laF'
 alias lt='/opt/homebrew/bin/eza -laF -sold'
 alias dust='/opt/homebrew/bin/dust -c'
@@ -42,6 +42,7 @@ alias goi='go install'
 alias gr='go run main.go'
 alias rsd='tmux send-keys -t {down-of} C-c ./go C-m'
 alias rsu='tmux send-keys -t {up-of} C-c ./go C-m'
+alias rsu2='tmux send-keys -t {up-of} C-c \!\! C-m C-m'
 alias renumber='tmux move-window -r'
 alias serveo='ssh -R 80:localhost:3000 serveo.net'
 alias trc="tr : '\012'"
