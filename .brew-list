@@ -3,6 +3,7 @@ bat
 brotli
 c-ares
 ca-certificates
+caddy
 choose-rust
 cloudflare-wrangler2
 cloudflared
@@ -13,6 +14,7 @@ encore
 eza
 flyctl
 fx
+fzf
 gettext
 gh
 git
@@ -37,6 +39,7 @@ oniguruma
 openssl@1.1
 openssl@3
 ov
+pandoc
 pcre2
 pscale
 pup
