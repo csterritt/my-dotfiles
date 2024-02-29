@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Removes all leading blanks from clipboard text, places cleaned text back on clipboard
+
+# Actual command goes here
+pbpaste | perl -ne 'if (/^\s+(\S.*)$/) { print $1, "\n"; } else { print; }' > /tmp/leading-clean.txt
+pbcopy < /tmp/leading-clean.txt
+rm -f /tmp/leading-clean.txt
+echo "Done!"
