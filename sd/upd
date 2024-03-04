@@ -35,5 +35,9 @@ echo 'Obsidian:'
 curl -s https://obsidian.md/download | pup 'a[href$=".dmg"]' attr{'href'} | perl -ne '@f = split(/\//); print $f[$#f - 1], "\n";'
 
 echo
+echo 'Recipe search:'
+cmd-line-recipe-search
+
+echo
 echo 'Free tab:'
 curl -s https://www.guitar-pro.com/tabs/all | pup 'div#msb-tod > a text{}' | tr -s '\r\n\t' ' ' ; echo
