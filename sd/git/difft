@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Do a difftastic diff on the current git status, or on staged if 'staged' is given
+
+if [ "x${1-}" != "x" -a "x${1-}" != "xstaged" ] ; then
+  echo "Usage: sd git difft [staged]"
+  exit 1
+fi
+
+staged=''
+if [ "x${1-}" = "xstaged" ] ; then
+  staged='--staged'
+fi
+
+
+# Actual command goes here
+GIT_EXTERNAL_DIFF=difft git diff ${staged-}

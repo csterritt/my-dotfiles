@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Do the various commands to set up the Obsidian directory for git
+
+cd ~/Documents/ObsidianNotes
+./save
