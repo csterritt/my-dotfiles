@@ -36,16 +36,11 @@ mysql-client
 ncurses
 ollama
 oniguruma
-openssl@1.1
 openssl@3
 ov
 pandoc
 pcre2
 pup
-pygments
-python-distlib
-python-filelock
-python-platformdirs
 python-tk@3.11
 python@3.11
 python@3.12
