@@ -10,4 +10,4 @@ if [ "x${1-}" = "x" -o "x${2-}" = "x" -o "x${3-}" != "x" ] ; then
 fi
 
 # Actual command goes here
-docker run --rm -v "$PWD:/imgs" --entrypoint=convert dpokidov/imagemagick "/imgs/${1-}" "/imgs/${2-}"
+docker run --rm --platform linux/amd64 -v "$PWD:/imgs" --entrypoint=convert dpokidov/imagemagick "/imgs/${1-}" "/imgs/${2-}"

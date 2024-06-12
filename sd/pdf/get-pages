@@ -13,4 +13,4 @@ inp=$1
 shift
 outp=$1
 shift
-docker run --rm -v "$PWD:/pdf" gkmr/pdf-tools pdftk "/pdf/${inp}" cat $@ output "/pdf/${outp}"
+docker run --rm --platform linux/amd64 -v "$PWD:/pdf" gkmr/pdf-tools pdftk "/pdf/${inp}" cat $@ output "/pdf/${outp}"

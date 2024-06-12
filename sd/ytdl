@@ -10,6 +10,7 @@ fi
 
 docker run \
   --rm -i \
+  --platform linux/amd64 \
   -e PGID=$(id -g) \
   -e PUID=$(id -u) \
   -v "$(pwd)":/workdir:rw \
