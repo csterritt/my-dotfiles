@@ -8,4 +8,4 @@ if [ "x${1-}" = "x" ] ; then
   exit 1
 fi
 
-rg -g $1 --files
+rg -g "$1" --files
