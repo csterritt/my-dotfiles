@@ -6,9 +6,8 @@
 [color "decorate"]
 	tag = magenta
 [core]
+	pager = delta
 	trustctime = false
-[diff]
-	compactionHeuristic = true
 [push]
 	default = simple
 [user]
@@ -16,3 +15,20 @@
 	email = csterritt@gmail.com
 [init]
 	defaultBranch = main
+[core]
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true    # use n and N to move between diff sections
+
+	# delta detects terminal colors automatically; set one of these to disable auto-detection
+	# dark = true
+	# light = true
+
+[merge]
+	conflictstyle = diff3
+
+[diff]
+	colorMoved = default

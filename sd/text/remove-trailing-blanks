@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Removes all trailing blanks from clipboard text, places cleaned text back on clipboard
+
+# Actual command goes here
+pbpaste | perl -ne 'if (/^(.*\S)\s+$/) { print $1, "\n"; } elsif (/^\s*$/) { print "\n"; } else { print; }' > /tmp/trailing-clean.txt
+pbcopy < /tmp/trailing-clean.txt
+rm -f /tmp/trailing-clean.txt
+echo "Done!"

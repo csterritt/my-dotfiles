@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Show newly installed things since the last time ~/.brew-list was saved
+
+brew list | comm -3 - ~/.brew-list
