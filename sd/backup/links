@@ -3,7 +3,7 @@
 set -euo pipefail
 
 # Back up my list of web links.
-js=`curl https://blockolinks.cls.cloud/chris | pup script attr{'src'} | egrep chris`
+js=`curl https://blockolinks.cls.cloud/chris | htmlq script --attribute src | egrep chris`
 if [ -e /Users/chris/Documents/Backups/Links/previous-links-2.js ] ; then
   mv -f /Users/chris/Documents/Backups/Links/previous-links-2.js /Users/chris/Documents/Backups/Links/previous-links-3.js
 fi
