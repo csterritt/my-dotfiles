@@ -22,6 +22,7 @@ git
 git-delta
 glow
 go
+htmlq
 icu4c
 jet
 jid
@@ -43,7 +44,6 @@ openssl@3
 ov
 pandoc
 pcre2
-pup
 python-tk@3.11
 python@3.11
 python@3.12
