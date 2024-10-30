@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
+set -u
 
 # Check homebrew for updates
 
@@ -32,12 +32,16 @@ nvm ls-remote | egrep v20 | tail -3
 
 echo
 echo 'Obsidian:'
-curl -s https://obsidian.md/download | curl -s https://obsidian.md/download | htmlq a --attribute href | egrep -i '\.dmg' | perl -ne '@f = split(/\//); print $f[$#f - 1], "\n";'
+curl -s https://obsidian.md/download | curl -s https://obsidian.md/download | htmlq a --attribute href | egrep -i '\.dmg' | perl -ne '@f = split(/\//); print $f[$#f - 1], "\n"; sub END { exit(0); }'
 
 echo
 echo 'Recipe search:'
-cmd-line-recipe-search
+cmd-line-recipe-search || exit 0
 
 echo
 echo 'Free tab:'
-curl -s https://www.guitar-pro.com/tabs/all | htmlq 'div#msb-tod' | sed '1,$s/<br>/ /' | htmlq --text a | tr -s '\r\n\t' ' ' ; echo
+curl -s https://www.guitar-pro.com/tabs/all | htmlq 'div#msb-tod' | sed '1,$s/<br>/ /' | htmlq --text a | tr -s '\r\n\t' ' ' ; echo || exit 0
+
+echo
+echo 'Pickup music:'
+curl -s https://www.pickupmusic.com | htmlq --text 'div.pricing-price p' | head -1

@@ -1,6 +1,7 @@
 atuin
 bat
 brotli
+bun
 c-ares
 ca-certificates
 caddy
@@ -24,6 +25,7 @@ glow
 go
 htmlq
 icu4c
+icu4c@75
 jet
 jid
 libcbor
@@ -44,9 +46,10 @@ openssl@3
 ov
 pandoc
 pcre2
+pocketbase
 python-tk@3.11
 python@3.11
-python@3.12
+python@3.13
 readline
 ripgrep
 shellcheck
