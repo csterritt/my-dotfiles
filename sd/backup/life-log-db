@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Back up the basic-cf-life-log database
+
+# Actual command goes here
+cd /Users/chris/hacks/life-log/basic-cf-life-log
+./do-db-dump.sh dist > /Users/chris/Documents/Backups/basic-cf-life-log-db/$(date  +db-backup-%Y-%m-%d-%H-%M.txt)
+echo Done
