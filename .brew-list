@@ -24,8 +24,7 @@ git-delta
 glow
 go
 htmlq
-icu4c
-icu4c@75
+icu4c@76
 jet
 jid
 libcbor
@@ -55,7 +54,7 @@ ripgrep
 shellcheck
 sqlite
 tailspin
-tcl-tk
+tcl-tk@8
 tealdeer
 tmux
 tree
