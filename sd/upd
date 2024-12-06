@@ -41,7 +41,3 @@ cmd-line-recipe-search || exit 0
 echo
 echo 'Free tab:'
 curl -s https://www.guitar-pro.com/tabs/all | htmlq 'div#msb-tod' | sed '1,$s/<br>/ /' | htmlq --text a | tr -s '\r\n\t' ' ' ; echo || exit 0
-
-echo
-echo 'Pickup music:'
-curl -s https://www.pickupmusic.com | htmlq --text 'div.pricing-price p' | head -1

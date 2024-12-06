@@ -126,3 +126,6 @@ export NVM_DIR="$HOME/.nvm"
 
 source /Users/chris/.docker/init-zsh.sh || true # Added by Docker Desktop
 eval "$(atuin init zsh)"
+
+# Added by `rbenv init` on Tue Dec  3 20:58:18 EST 2024
+eval "$(rbenv init - --no-rehash zsh)"
