@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# List all the models currently downloaded
+
+/bin/ls -1 .ollama/models/manifests/registry.ollama.ai/library
