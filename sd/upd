@@ -39,5 +39,10 @@ echo 'Recipe search:'
 cmd-line-recipe-search || exit 0
 
 echo
+echo 'DB Count:'
+curl https://chris_st--0ff4c572e1c811ef84b2e6cdfca9ef9f.web.val.run/count || exit 0
+echo
+
+echo
 echo 'Free tab:'
 curl -s https://www.guitar-pro.com/tabs/all | htmlq 'div#msb-tod' | sed '1,$s/<br>/ /' | htmlq --text a | tr -s '\r\n\t' ' ' ; echo || exit 0
