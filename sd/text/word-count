@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Count the words in the current paste buffer
+pbpaste | wc -w

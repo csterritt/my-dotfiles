@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/opt/homebrew/bin:/opt/homebrew/opt/node@22/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/chris/.oh-my-zsh"
@@ -68,7 +68,7 @@ DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-nvm gem bundler golang npm rbenv ruby vi-mode yarn nvm zsh-autosuggestions zsh-syntax-highlighting sd)
+plugins=(git gem bundler golang npm rbenv ruby vi-mode yarn nvm zsh-nvm zsh-autosuggestions sd)
 
 source $ZSH/oh-my-zsh.sh
 source ${HOME}/.bash_aliases
@@ -124,8 +124,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-source /Users/chris/.docker/init-zsh.sh || true # Added by Docker Desktop
+# source /Users/chris/.docker/init-zsh.sh || true # Added by Docker Desktop
 eval "$(atuin init zsh)"
 
 # Added by `rbenv init` on Tue Dec  3 20:58:18 EST 2024
 eval "$(rbenv init - --no-rehash zsh)"
+
+# Added by Windsurf
+export PATH="/Users/chris/.codeium/windsurf/bin:$PATH"
