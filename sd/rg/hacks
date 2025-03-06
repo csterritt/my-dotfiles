@@ -12,5 +12,5 @@ cd ~/hacks
 if [ "x${2-}" = "x" ] ; then
   rg $1
 else
-  rg -g $1 $2
+  rg --iglob $1 $2
 fi

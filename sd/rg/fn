@@ -2,10 +2,10 @@
 
 set -euo pipefail
 
-# Find files by filename below the current directory.
+# Find files by case-insensitive filename below the current directory. NOTE: Use glob-style patterns, not regex.
 if [ "x${1-}" = "x" ] ; then
   echo "Usage: sd rg fn file-glob-pattern"
   exit 1
 fi
 
-rg -g "$1" --files
+rg --files --iglob "$1"
