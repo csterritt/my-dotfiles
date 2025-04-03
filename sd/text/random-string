@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Generate a random 32-byte alpha-numeric string
+LC_ALL=C tr -dc '[:alnum:]' < /dev/urandom | head -c32
+echo
