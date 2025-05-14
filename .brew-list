@@ -2,9 +2,11 @@ atuin
 autoconf
 bat
 brotli
+bun
 c-ares
 ca-certificates
 caddy
+choose-rust
 cloudflare-wrangler
 cloudflare-wrangler2
 cloudflared
@@ -13,9 +15,11 @@ difftastic
 duf
 dust
 eza
+fd
 flyctl
 fx
 fzf
+gdbm
 gettext
 gh
 git
@@ -24,6 +28,7 @@ glow
 go
 htmlq
 icu4c@76
+icu4c@77
 jet
 jid
 libcbor
@@ -33,6 +38,7 @@ libgit2
 libgit2@1.7
 libnghttp2
 libssh2
+libtommath
 libunistring
 libuv
 libyaml
@@ -48,8 +54,11 @@ pandoc
 pcre2
 pkgconf
 python-tk@3.11
+python-tk@3.13
+python-tk@3.9
 python@3.11
 python@3.13
+python@3.9
 rbenv
 readline
 ripgrep
@@ -58,6 +67,7 @@ scooter
 shellcheck
 sqlite
 tailspin
+tcl-tk
 tcl-tk@8
 tealdeer
 tmux
@@ -70,5 +80,6 @@ yarn
 zlib
 zoxide
 zstd
+heynote
 windsurf
 zed

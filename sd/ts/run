@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-# Describe the new command in this comment
+# Run the given typescript file as a script. bun may be better...
 
 if [ "x${1-}" = "x" -o "x${2-}" != "x" ] ; then
   echo "Usage: sd ts run file.ts"

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Rename the files in the current directory that start with a number, e.g., 02-test-first.ts, starting at 01 and going up
+
+# Actual command goes here
+/bin/ls | egrep '^[0-9]' | perl /Users/chris/sd/filename/script.pl
