@@ -20,4 +20,4 @@ if [ -e "$1" ] ; then
   exit 1
 fi
 
-wrangler r2 object put $1/$2 -f $2
+wrangler r2 object put --remote $1/$2 -f $2
