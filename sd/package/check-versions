@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Examine package.json in the current directory, and print out any packages that need to be updated.
+
+if [ "x${1-}" != "x" ] ; then
+  echo "Usage: sd package check-versions"
+  exit 1
+fi
+
+# Actual command goes here
+/opt/homebrew/bin/bun /Users/chris/sd/package/check-versions.ts
