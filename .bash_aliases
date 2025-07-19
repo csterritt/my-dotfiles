@@ -54,6 +54,7 @@ alias ccat=/bin/cat
 alias cat='/opt/homebrew/bin/bat --theme "Solarized (light)"'
 alias t='/opt/homebrew/bin/bat --theme "Solarized (light)"'
 alias nr="nim r '--hint[SuccessX]:off' '--hint[Conf]:off' '--hint[Link]:off' '--hint[Exec]:off'"
+alias tailscale='/Applications/Tailscale.app/Contents/MacOS/Tailscale'
 
 export LESS='-RMIX'
 

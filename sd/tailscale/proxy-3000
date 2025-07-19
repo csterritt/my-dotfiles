@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Proxy localhost:3000 to tailscale, so phones etc. can see it
+/Applications/Tailscale.app/Contents/MacOS/Tailscale serve http://localhost:3000
