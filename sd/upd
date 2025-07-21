@@ -28,7 +28,7 @@ brew_update
 
 echo 'Node:'
 source /Users/chris/.nvm/nvm.sh
-nvm ls-remote | egrep v20 | tail -3
+nvm ls-remote | egrep v22 | tail -3
 
 echo
 echo 'Obsidian:'
