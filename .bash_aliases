@@ -55,6 +55,10 @@ alias cat='/opt/homebrew/bin/bat --theme "Solarized (light)"'
 alias t='/opt/homebrew/bin/bat --theme "Solarized (light)"'
 alias nr="nim r '--hint[SuccessX]:off' '--hint[Conf]:off' '--hint[Link]:off' '--hint[Exec]:off'"
 alias tailscale='/Applications/Tailscale.app/Contents/MacOS/Tailscale'
+alias js='jj st'
+alias jla='jj log'
+alias jl='jj log --limit 5'
+alias jll='jj log --limit 10'
 
 export LESS='-RMIX'
 
