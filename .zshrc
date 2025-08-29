@@ -132,3 +132,14 @@ eval "$(rbenv init - --no-rehash zsh)"
 
 # Added by Windsurf
 export PATH="/Users/chris/.codeium/windsurf/bin:$PATH"
+
+# Set up for pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
+eval "$(pyenv virtualenv-init -)"
+
+# Find orbstack's docker, etc.
+export PATH="$PATH":/Users/chris/.orbstack/bin
+
+fpath+=/Users/chris/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh

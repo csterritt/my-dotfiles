@@ -15,6 +15,9 @@ brew_update () {
     echo "tmux has changed, bailing."
     return
   fi
+
+  echo "hit return..."
+  read
   
   brew upgrade
   

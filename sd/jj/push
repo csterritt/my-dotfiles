@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Push either the `dev` branch or both `dev` and `main` branches to origin.
+
+if [ "x${1-}" = "x" -o "x${2-}" != "x" ] || [ "x${1-}" != "xdev" -a "x${1-}" != "xboth" ] ; then
+  echo "Usage: sd jj push (dev | both)"
+  exit 1
+fi
+
+echo "Pushing ${1-}..."
+jj bookmark set dev -r @ ; jj git push --bookmark dev
+
+if [ "x${1-}" = "xboth" ] ; then
+  jj bookmark set main -r @ ; jj git push --bookmark main
+fi

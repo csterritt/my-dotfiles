@@ -59,6 +59,8 @@ alias js='jj st'
 alias jla='jj log'
 alias jl='jj log --limit 5'
 alias jll='jj log --limit 10'
+alias jlr='jj log -r ::'
+alias vi='hx'
 
 export LESS='-RMIX'
 

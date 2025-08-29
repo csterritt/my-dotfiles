@@ -5,6 +5,6 @@ set -euo pipefail
 # Split lines greater than 80 characters on blanks
 
 echo Cleaning...
-pbpaste | ~/bin/wrap-paragraph-helper.rb > /tmp/clean.txt
+pbpaste | bun /Users/chris/sd/text/wrap.ts > /tmp/clean.txt
 pbcopy < /tmp/clean.txt
 rm -f /tmp/clean.txt
