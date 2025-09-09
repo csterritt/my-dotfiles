@@ -60,6 +60,8 @@ alias jla='jj log'
 alias jl='jj log --limit 5'
 alias jll='jj log --limit 10'
 alias jlr='jj log -r ::'
+alias jdb='jj diff'
+alias jdbt='jj diff --tool meld'
 alias vi='hx'
 
 export LESS='-RMIX'

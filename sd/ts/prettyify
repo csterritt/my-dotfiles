@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Find all '*.ts*' files from here on down and format them with prettier.
+
+for i in `fd --glob '*.ts*'` ; do
+  npx prettier --write "$i"
+done
