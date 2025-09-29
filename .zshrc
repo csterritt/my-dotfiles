@@ -93,7 +93,7 @@ autoload -U zmv
 unsetopt autopushd
 
 # User configuration
-export EDITOR=/usr/bin/vi
+export EDITOR=/opt/homebrew/bin/hx
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH:${HOME}/bin
 
 # Set up for ripgrep config

@@ -1,0 +1,9 @@
+"$schema" = "https://jj-vcs.github.io/jj/latest/config-schema.json"
+
+[user]
+name = "Chris Sterritt"
+email = "csterritt@gmail.com"
+
+[ui]
+diff-formatter = "delta"
+default-command = ["log"]
