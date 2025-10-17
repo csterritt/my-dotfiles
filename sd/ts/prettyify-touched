@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Find all changed/modified/deleted files from here on down and format them with prettier.
+
+for i in `jj diff -r @ --template 'path ++ "\n"'` ; do
+  npx prettier --write "$i"
+done
+

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Run the TypeScript compiler in type-check only mode over the current codebase
+
+npx tsc -p tsconfig.json --noEmit
