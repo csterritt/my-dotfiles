@@ -4,7 +4,7 @@ set -euo pipefail
 
 # Find all changed/modified/deleted files from here on down and format them with prettier.
 
-for i in `jj diff -r @ --template 'path ++ "\n"'` ; do
+for i in `jj diff -r @ --template 'path ++ "\n"' | egrep '\.(ts|tsx|js|css|html)$'`; do
   npx prettier --write "$i"
 done
 

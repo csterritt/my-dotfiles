@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Show all the processes with a given pattern in them
+if [ "x${1-}" = "x" ] ; then
+  >&2 echo "Usage: sd running process-pattern-to-find"
+  exit 1
+fi
+
+process_list="$(ps -eo 'pid command')"
+if [[ $# != 0 ]]; then
+  process_list="$(echo "$process_list" | grep -Fiw "$@")"
+fi
+
+echo "$process_list" |
+  grep -Fv "${BASH_SOURCE[0]}" |
+  grep -Fv grep |
+  GREP_COLORS='mt=00;35' grep -E --colour=auto '^\s*[[:digit:]]+'

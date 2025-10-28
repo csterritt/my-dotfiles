@@ -2,8 +2,8 @@
 
 set -euo pipefail
 
-# Find all '*.ts*' files from here on down and format them with prettier.
+# Find all formattable files from here on down and format them with prettier.
 
-for i in `fd --glob '*.ts*'` ; do
+for i in `fd '.*.(ts|tsx|js|css|html)$' | egrep -v '\.(git|jj)' | egrep -v node_modules` ; do
   npx prettier --write "$i"
 done

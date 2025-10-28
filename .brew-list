@@ -15,6 +15,7 @@ dasel
 difftastic
 duf
 dust
+encore
 eza
 f2
 fd
@@ -42,6 +43,7 @@ libevent
 libfido2
 libgit2
 libgit2@1.7
+libmagic
 libnghttp2
 libnghttp3
 libngtcp2
@@ -53,6 +55,7 @@ libyaml
 lz4
 m4
 mailpit
+mdbook
 mpdecimal
 mysql-client
 ncurses
@@ -69,11 +72,13 @@ python-tk@3.13
 python-tk@3.9
 python@3.11
 python@3.13
+python@3.14
 python@3.9
 rbenv
 readline
 ripgrep
 ruby-build
+s3cmd
 scooter
 shellcheck
 simdjson
@@ -97,4 +102,3 @@ zstd
 heynote
 meld
 windsurf
-zed
