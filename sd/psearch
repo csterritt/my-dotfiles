@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# List all processes matching the given regex
+
+if [ "x${1-}" = "x" -o "x${2-}" != "x" ] ; then
+  echo "Usage: sd psearch pattern"
+  exit 1
+fi
+
+# Actual command goes here
+ps uxwww | egrep -i "${1-}"| egrep -v '(grep|sd/psearch)'

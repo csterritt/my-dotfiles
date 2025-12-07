@@ -3,4 +3,4 @@
 set -euo pipefail
 
 # Start up the ollama server to run and handle requests from the command line client.
-OLLAMA_NEW_ESTIMATES="1" OLLAMA_FLASH_ATTENTION="1" OLLAMA_KV_CACHE_TYPE="q8_0" /opt/homebrew/opt/ollama/bin/ollama serve
+OLLAMA_API_KEY=`cat ~/.config/ollama/api.key` OLLAMA_NEW_ESTIMATES="1" OLLAMA_FLASH_ATTENTION="1" OLLAMA_KV_CACHE_TYPE="q8_0" /opt/homebrew/opt/ollama/bin/ollama serve

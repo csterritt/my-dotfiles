@@ -6,6 +6,7 @@ bun
 c-ares
 ca-certificates
 caddy
+carl
 choose-rust
 cloudflare-wrangler
 cloudflare-wrangler2
@@ -22,7 +23,6 @@ fd
 flyctl
 fx
 fzf
-gdbm
 gettext
 gh
 git
@@ -33,7 +33,7 @@ go
 helix
 htmlq
 icu4c@76
-icu4c@77
+icu4c@78
 jet
 jid
 jj
@@ -65,15 +65,14 @@ openssl@3
 pandoc
 pcre2
 pkgconf
+pocketbase
 pyenv
 pyenv-virtualenv
 python-tk@3.11
 python-tk@3.13
-python-tk@3.9
 python@3.11
 python@3.13
 python@3.14
-python@3.9
 rbenv
 readline
 ripgrep
@@ -101,4 +100,5 @@ zoxide
 zstd
 heynote
 meld
+wave
 windsurf
