@@ -40,3 +40,5 @@ curl -s https://obsidian.md/download | curl -s https://obsidian.md/download | ht
 echo
 echo 'Free tab:'
 curl -s https://www.guitar-pro.com/tabs/all | htmlq 'div#msb-tod' | sed '1,$s/<br>/ /' | htmlq --text a | tr -s '\r\n\t' ' ' ; echo || exit 0
+
+date > ~/.last-upd.txt

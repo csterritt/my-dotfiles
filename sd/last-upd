@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Show the last time the 'sd upd' command was run
+
+cat ~/.last-upd.txt
