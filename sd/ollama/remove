@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Remove an ollama model, its blobs and model file
+bun /Users/chris/sd/ollama/delete-model.ts $*

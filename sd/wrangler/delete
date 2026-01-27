@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Delete the given file (arg 2) from the given bucket (arg 1)
+if (( $# != 2 )); then
+  >&2 echo "Usage: sd wrangler delete bucket-name file-to-delete"
+  exit 1
+fi
+
+wrangler r2 object delete --remote $1/$2

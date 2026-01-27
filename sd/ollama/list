@@ -2,6 +2,6 @@
 
 set -euo pipefail
 
-# List all the models currently downloaded
+# List all the models currently downloaded, and their sizes
 
-/bin/ls -1 ~/.ollama/models/manifests/registry.ollama.ai/library
+bun /Users/chris/sd/ollama/list-models.ts
