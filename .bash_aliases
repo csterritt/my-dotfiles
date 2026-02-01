@@ -64,6 +64,7 @@ alias jdb='jj diff'
 alias jdbt='jj diff --tool meld'
 alias vi='hx'
 alias carl='/opt/homebrew/bin/carl -s'
+alias sp='sprite'
 
 export LESS='-RMIX'
 

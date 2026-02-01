@@ -1,3 +1,4 @@
+ada-url
 atuin
 autoconf
 bat
@@ -24,6 +25,7 @@ f2
 fd
 fence
 flyctl
+fmt
 fx
 fzf
 gettext
@@ -33,6 +35,7 @@ git-delta
 glow
 gmp
 go
+hdrhistogram_c
 headson
 helix
 htmlq
@@ -60,6 +63,7 @@ libunistring
 libuv
 libyaml
 little-cms2
+llhttp
 lz4
 m4
 mailpit
