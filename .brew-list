@@ -1,4 +1,5 @@
 ada-url
+ansible
 atuin
 autoconf
 bat
@@ -8,12 +9,15 @@ c-ares
 ca-certificates
 caddy
 carl
+certifi
+cffi
 choose-rust
 cloudflare-wrangler
 cloudflare-wrangler2
 cloudflared
 cmake
 coreutils
+cryptography
 dasel
 deno
 difftastic
@@ -23,7 +27,6 @@ encore
 eza
 f2
 fd
-fence
 flyctl
 fmt
 fx
@@ -56,6 +59,8 @@ libmagic
 libnghttp2
 libnghttp3
 libngtcp2
+libsodium
+libssh
 libssh2
 libtiff
 libtommath
@@ -79,6 +84,7 @@ openssl@3
 pandoc
 pcre2
 pkgconf
+pycparser
 pyenv
 pyenv-virtualenv
 python-tk@3.11
@@ -101,6 +107,7 @@ tailspin
 tcl-tk
 tcl-tk@8
 tealdeer
+tirith
 tmux
 tree
 up
@@ -113,6 +120,7 @@ yarn
 zlib
 zoxide
 zstd
+font-maple-mono-nf
 heynote
 meld
 wave
