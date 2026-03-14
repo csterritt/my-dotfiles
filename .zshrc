@@ -143,3 +143,4 @@ eval "$(pyenv virtualenv-init -)"
 export PATH="$PATH":/Users/chris/.orbstack/bin
 
 fpath+=/Users/chris/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh
+eval "$(tirith init --shell zsh)"

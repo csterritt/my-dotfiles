@@ -126,6 +126,7 @@ tree
 unbound
 up
 utf8proc
+uv
 uvwasi
 vde
 virtualenv
@@ -135,11 +136,12 @@ yarn
 zlib
 zoxide
 zstd
-donut
 font-maple-mono-nf
 hashicorp-vagrant
 heynote
 meld
+stats
+utm
 vagrant
 wave
 windsurf
