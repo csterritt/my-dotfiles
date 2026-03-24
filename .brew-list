@@ -48,7 +48,6 @@ helix
 htmlq
 icu4c@78
 jet
-jid
 jj
 jjui
 jpeg-turbo
@@ -137,6 +136,7 @@ zlib
 zoxide
 zstd
 font-maple-mono-nf
+ghostty
 hashicorp-vagrant
 heynote
 meld
