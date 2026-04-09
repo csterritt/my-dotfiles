@@ -65,6 +65,7 @@ alias parent='jj edit @-'
 alias child='jj edit @+'
 alias vi='hx'
 alias carl='/opt/homebrew/bin/carl -s'
+alias c3='carl -3'
 alias sp='sprite'
 
 export LESS='-RMIX'

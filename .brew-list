@@ -1,5 +1,6 @@
 ada-url
 ansible
+apfel
 atuin
 autoconf
 bat
@@ -51,11 +52,11 @@ jet
 jj
 jjui
 jpeg-turbo
+jq
 libcbor
 libevent
 libfido2
 libgit2
-libiconv
 libidn2
 libmagic
 libnghttp2
@@ -135,6 +136,7 @@ yarn
 zlib
 zoxide
 zstd
+cadran
 font-maple-mono-nf
 ghostty
 hashicorp-vagrant
