@@ -74,6 +74,7 @@ libunistring
 libusb
 libuv
 libyaml
+litestream
 little-cms2
 llhttp
 lz4
@@ -81,10 +82,12 @@ lzo
 m4
 mailpit
 mdbook
+merve
 mlx
 mlx-c
 mpdecimal
 mysql-client
+nbytes
 ncurses
 nettle
 ollama
@@ -112,6 +115,7 @@ s3cmd
 scooter
 shellcheck
 simdjson
+simdutf
 snappy
 snitch
 sqlite
@@ -133,6 +137,7 @@ virtualenv
 whosthere
 xz
 yarn
+zellij
 zlib
 zoxide
 zstd

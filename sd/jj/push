@@ -4,17 +4,26 @@ set -euo pipefail
 
 # Push either the `dev` branch or both `dev` and `main` branches to origin.
 
-if [ "x${1-}" = "x" -o "x${2-}" != "x" ] || [ "x${1-}" != "xdev" -a "x${1-}" != "xmain" -a "x${1-}" != "xboth" ] ; then
-  echo "Usage: sd jj push (dev | main | both)"
+if [ "x${1-}" = "x" -o "x${2-}" != "x" ] ; then
+  echo "Usage: sd jj push (dev | main | both | other-branch-name )"
   exit 1
 fi
 
+done=0
 if [ "x${1-}" = "xdev" -o "x${1-}" = "xboth" ] ; then
   echo "Pushing dev..."
   jj bookmark set dev -r @ ; jj git push --bookmark dev
+  done=1
 fi
 
 if [ "x${1-}" = "xmain" -o "x${1-}" = "xboth" ] ; then
   echo "Pushing main..."
   jj bookmark set main -r @ ; jj git push --bookmark main
+  done=1
+fi
+
+if [ "$done" = 0 ] ; then
+  echo "Pushing ${1-}..."
+  jj bookmark set "${1-}" -r @ ; jj git push --bookmark "${1-}"
+  done=1
 fi
