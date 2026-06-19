@@ -146,3 +146,8 @@ export PATH="$PATH":/Users/chris/.orbstack/bin
 
 fpath+=/Users/chris/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh
 eval "$(tirith init --shell zsh)"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/chris/.lmstudio/bin"
+# End of LM Studio CLI section
+

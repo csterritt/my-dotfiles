@@ -55,6 +55,7 @@ jpeg-turbo
 jq
 libcbor
 libevent
+libffi
 libfido2
 libgit2
 libidn2
@@ -111,8 +112,10 @@ rbenv
 readline
 ripgrep
 ruby-build
+rura
 s3cmd
 scooter
+sem-cli
 shellcheck
 simdjson
 simdutf
@@ -125,9 +128,7 @@ tcl-tk
 tcl-tk@8
 tealdeer
 tirith
-tmux
 tree
-unbound
 up
 utf8proc
 uv
@@ -141,14 +142,16 @@ zellij
 zlib
 zoxide
 zstd
+agentsview
 cadran
+devin-desktop
 font-maple-mono-nf
 ghostty
 hashicorp-vagrant
 heynote
+macusb
 meld
-stats
 utm
 vagrant
-wave
+vlc
 windsurf

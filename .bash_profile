@@ -55,3 +55,8 @@ export PATH=/Users/chris/hacks/flutter/flutter/bin:${JAVA_HOME}/bin:${PATH}
 source /Users/chris/.config/broot/launcher/bash/br
 
 source /Users/chris/.docker/init-bash.sh || true # Added by Docker Desktop
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/chris/.lmstudio/bin"
+# End of LM Studio CLI section
+

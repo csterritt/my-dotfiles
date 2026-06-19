@@ -6,3 +6,8 @@ alias config='/usr/bin/git --git-dir=/Users/chris/.cfg/ --work-tree=/Users/chris
 source /Users/chris/.config/broot/launcher/bash/br
 
 source /Users/chris/.docker/init-bash.sh || true # Added by Docker Desktop
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/chris/.lmstudio/bin"
+# End of LM Studio CLI section
+
