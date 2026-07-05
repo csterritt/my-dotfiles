@@ -19,7 +19,7 @@ brew_update () {
   echo "hit return..."
   read
   
-  brew upgrade
+  brew upgrade -y
   
   if [ -e /opt/homebrew/bin/node  ] ; then
     brew uninstall --ignore-dependencies node

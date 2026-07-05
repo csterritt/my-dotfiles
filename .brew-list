@@ -36,6 +36,7 @@ fracturedjson
 fx
 fzf
 gettext
+ggml
 gh
 git
 git-delta
@@ -47,6 +48,7 @@ go
 hdrhistogram_c
 helix
 htmlq
+hunk
 icu4c@78
 jet
 jj
@@ -63,6 +65,7 @@ libmagic
 libnghttp2
 libnghttp3
 libngtcp2
+libomp
 libpng
 libslirp
 libsodium
@@ -77,6 +80,7 @@ libuv
 libyaml
 litestream
 little-cms2
+llama.cpp
 llhttp
 lz4
 lzo
@@ -115,6 +119,8 @@ ruby-build
 rura
 s3cmd
 scooter
+sdl2-compat
+sdl3
 sem-cli
 shellcheck
 simdjson
@@ -135,11 +141,14 @@ uv
 uvwasi
 vde
 virtualenv
+whisper-cpp
 whosthere
 xz
 yarn
+yazi
 zellij
 zlib
+zlib-ng-compat
 zoxide
 zstd
 agentsview
@@ -149,7 +158,6 @@ font-maple-mono-nf
 ghostty
 hashicorp-vagrant
 heynote
-macusb
 meld
 utm
 vagrant
