@@ -38,10 +38,10 @@ fzf
 gettext
 ggml
 gh
+giflib
 git
 git-delta
 glib
-glow
 gmp
 gnutls
 go
@@ -55,6 +55,7 @@ jj
 jjui
 jpeg-turbo
 jq
+json-c
 libcbor
 libevent
 libffi
@@ -82,6 +83,7 @@ litestream
 little-cms2
 llama.cpp
 llhttp
+llmfit
 lz4
 lzo
 m4
@@ -133,7 +135,6 @@ tailspin
 tcl-tk
 tcl-tk@8
 tealdeer
-tirith
 tree
 up
 utf8proc
@@ -141,6 +142,7 @@ uv
 uvwasi
 vde
 virtualenv
+webp
 whisper-cpp
 whosthere
 xz
@@ -159,6 +161,9 @@ ghostty
 hashicorp-vagrant
 heynote
 meld
+mouseless
+sbx
+siliconscope
 utm
 vagrant
 vlc
