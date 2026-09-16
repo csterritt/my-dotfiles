@@ -15,7 +15,6 @@ certifi
 cffi
 choose-rust
 cloudflare-wrangler
-cloudflare-wrangler2
 cloudflared
 cmake
 coreutils
@@ -144,6 +143,7 @@ vde
 virtualenv
 webp
 whisper-cpp
+whisper.cpp
 whosthere
 xz
 yarn
