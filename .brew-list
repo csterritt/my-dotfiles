@@ -1,3 +1,4 @@
+abseil
 ada-url
 ansible
 apfel
@@ -46,6 +47,7 @@ gnutls
 go
 hdrhistogram_c
 helix
+highway
 htmlq
 hunk
 icu4c@78
@@ -63,8 +65,6 @@ libgit2
 libidn2
 libmagic
 libnghttp2
-libnghttp3
-libngtcp2
 libomp
 libpng
 libslirp
@@ -99,11 +99,13 @@ nettle
 ollama
 oniguruma
 openssl@3
+openssl@4
 p11-kit
 pandoc
 pcre2
 pixman
 pkgconf
+popt
 pycparser
 pyenv
 pyenv-virtualenv
@@ -116,6 +118,7 @@ qemu
 rbenv
 readline
 ripgrep
+rsync
 ruby-build
 rura
 s3cmd
@@ -145,6 +148,7 @@ webp
 whisper-cpp
 whisper.cpp
 whosthere
+xxhash
 xz
 yarn
 yazi
@@ -155,7 +159,6 @@ zoxide
 zstd
 agentsview
 cadran
-devin-desktop
 font-maple-mono-nf
 ghostty
 hashicorp-vagrant
@@ -167,4 +170,3 @@ siliconscope
 utm
 vagrant
 vlc
-windsurf
