@@ -10,4 +10,11 @@ if [ "x${1-}" = "x" -o "x${2-}" != "x" ] ; then
 fi
 
 # Actual command goes here
-ps uxwww | egrep -i "${1-}"| egrep -v '(grep|sd/psearch)'
+# ps uxwww | egrep -i "${1-}"| egrep -v '(grep|sd/psearch)'
+MAGENTA=$(printf '\033[95m')
+RESET=$(printf '\033[0m')
+
+ps uxwww | egrep -i "${1-}" | egrep -v '(grep|psearch)' | sed -E \
+	-e "s/^(([^ ]+ +){10})([^ ]+)/\1${MAGENTA}\3${RESET}/" \
+	-e "s/^[^ ]+/${MAGENTA}&${RESET}/"
+
